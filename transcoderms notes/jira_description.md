@@ -1,10 +1,11 @@
 # Descripción de la investigación sobre manejo de errores en TaskController
 
 ## Problema identificado
-El controlador de tareas (`TaskController`) devuelve HTTP 200 incluso cuando se producen errores (por ejemplo, violaciones de constraints en SQLite o errores al abrir archivos con OpenCV).
+El controlador de tareas (`TaskController`) no maneja explícitamente el caso cuando `PostCommand` devuelve `-1`, lo que indica que el comando no es una operación de cancelación. Además, cuando no se encuentra un perfil supra, se lanza una excepción genérica. Esto lleva a respuestas ambiguas y un manejo de errores inconsistente.
 
 ## Impacto
-Las aplicaciones cliente no pueden distinguir entre llamadas exitosas y fallidas correctamente, ya que el código HTTP no refleja el estado real de la operación.
+- Los clientes pueden recibir respuestas HTTP poco claras o engañosas.
+- El manejo de errores no es consistente, lo que dificulta la depuración y el mantenimiento.
 
 ## Mejores opciones identificadas
 
@@ -30,3 +31,7 @@ Se recomienda combinar las opciones anteriores para lograr un manejo de errores 
 - Utilizar excepciones personalizadas para los casos de negocio relevantes.
 - Estandarizar las respuestas de error en formato JSON.
 - Devolver siempre códigos HTTP adecuados según el resultado de la operación.
+- Manejar explícitamente el valor de retorno `-1` de `PostCommand` para asegurar el flujo correcto para comandos que no son de cancelación.
+- Elegir una estrategia de manejo de errores consistente:
+    - Usar excepciones personalizadas y middleware para un manejo de errores centralizado y un formato de respuesta estandarizado.
+    - Devolver códigos de estado HTTP directamente para simplicidad en casos sencillos.

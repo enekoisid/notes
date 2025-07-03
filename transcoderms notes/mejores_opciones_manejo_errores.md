@@ -1,119 +1,61 @@
-# ✅ Mejores Prácticas para el Manejo de Errores en Controladores C#
+# Proposal: Improved Error Handling and Command Flow in TaskController
 
-Este documento resume las opciones más efectivas para mejorar el manejo de errores en controladores C# que gestionan tareas y devuelven resultados a los clientes.
+## Context
+Currently, the `TaskController` can use a global error handling middleware and custom exceptions, but these are not enforced. There are two main issues:
 
----
-
-## 1. Uso Correcto de ActionResult y Códigos HTTP
-- Devuelve siempre el código HTTP adecuado según el tipo de error: `BadRequest (400)`, `NotFound (404)`, `Conflict (409)`, `InternalServerError (500)`, etc.
-- Ejemplo:
+1. In the POST endpoint for tasks, if the command is not a cancel operation, the body does nothing. The `PostCommand` method returns `-1` to indicate that the command is not a cancel, but this value is not explicitly handled in the controller.
+2. When a supra profile is not found, the code throws a generic exception:
 
 ```csharp
-catch (DbUpdateException ex) {
-    return StatusCode(StatusCodes.Status409Conflict, new { message = "Conflicto en la base de datos", details = ex.InnerException?.Message });
-}
-catch (FileNotFoundException ex) {
-    return NotFound(new { message = "Archivo no encontrado", details = ex.Message });
-}
-catch (Exception ex) {
-    return StatusCode(StatusCodes.Status500InternalServerError, new { message = "Error inesperado", details = ex.Message });
-}
+throw new Exception($"Error. Supra profile '{supraName}' not found in BBDD.");
 ```
 
-## 2. Excepciones Personalizadas
-- Crea excepciones específicas para cada tipo de error de negocio o técnico.
-- Permite devolver códigos HTTP precisos y mensajes claros.
-- Ejemplo:
+Currently, the controller can either throw exceptions (to be handled by middleware) or return HTTP status codes directly. The middleware is only relevant if the throw approach is chosen.
 
+## Proposed Solution
+
+### 1. Handle `PostCommand` Return Value in Controller
+- If `PostCommand` returns `-1`, this should trigger the `else` branch in the controller, allowing for proper handling of non-cancel commands.
+- This avoids ambiguous responses and ensures the controller logic is clear and maintainable.
+
+#### Example:
 ```csharp
-public class TaskOperationException : Exception {
-    public HttpStatusCode StatusCode { get; }
-    public TaskOperationException(string message, HttpStatusCode statusCode) : base(message) => StatusCode = statusCode;
+var result = PostCommand(command, (int)id);
+if (result == -1)
+{
+    // Not a cancel command, execute alternative logic
+    // ...
 }
-public class NotFoundException : TaskOperationException {
-    public NotFoundException(string message) : base(message, HttpStatusCode.NotFound) { }
-}
-public class BadRequestException : TaskOperationException {
-    public BadRequestException(string message) : base(message, HttpStatusCode.BadRequest) { }
+else
+{
+    return Ok(result);
 }
 ```
 
-## 3. Middleware Global de Manejo de Errores
-- Centraliza el manejo de excepciones y evita duplicar lógica en los controladores.
-- Devuelve respuestas JSON estandarizadas y códigos HTTP correctos.
-- Ejemplo:
+### 2. Error Handling Options
+You have two main approaches for error handling:
 
+#### a) Use Custom Exceptions with Middleware
+- Throw custom exceptions for specific error cases (e.g., `NotFoundException`).
+- The middleware will catch these exceptions and return the appropriate HTTP status code and error message.
+
+##### Example:
 ```csharp
-app.UseExceptionHandler(errorApp => {
-    errorApp.Run(async context => {
-        var exceptionHandler = context.Features.Get<IExceptionHandlerFeature>();
-        var exception = exceptionHandler?.Error;
-        context.Response.StatusCode = exception switch {
-            NotFoundException => StatusCodes.Status404NotFound,
-            BadRequestException => StatusCodes.Status400BadRequest,
-            _ => StatusCodes.Status500InternalServerError
-        };
-        await context.Response.WriteAsync(exception?.Message ?? "Error interno");
-    });
-});
+if (/* supra profile not found */)
+    throw new NotFoundException($"Supra profile '{supraName}' not found in BBDD.");
 ```
 
-## 4. Validación Anticipada y Separación de Errores
-- Valida los modelos y parámetros antes de ejecutar la lógica de negocio.
-- Separa errores de dominio (validaciones) de errores técnicos (fallos de disco, OpenCV, etc).
-- Ejemplo:
+#### b) Return HTTP Status Codes Directly
+- Instead of throwing, the controller can return `NotFound()` or other status codes directly:
 
 ```csharp
-if (task.s3pathIn?.accessKey == null)
-    throw new BadRequestException("S3 accessKey es requerido");
+if (/* supra profile not found */)
+    return NotFound($"Supra profile '{supraName}' not found in BBDD.");
 ```
+- This approach is simpler and does not require middleware, but may lead to more repetitive code in controllers.
 
-## 5. Respuestas de Error Estandarizadas
-- Utiliza una estructura JSON común para los errores:
-
-```csharp
-public class ApiErrorResponse {
-    public int StatusCode { get; set; }
-    public string Message { get; set; }
-    public string? Details { get; set; }
-}
-// Uso:
-return BadRequest(new ApiErrorResponse {
-    StatusCode = 400,
-    Message = "Parámetros inválidos",
-    Details = ex.Message
-});
-```
-
-## 6. Logging Detallado y Trazabilidad
-- Registra los errores críticos con identificadores (`traceId`, `taskId`) para facilitar el diagnóstico.
-- Ejemplo:
-
-```csharp
-_logger.LogError(ex, "Error cancelando tarea {TaskId}", id);
-```
-
-## 7. Pruebas Unitarias y Documentación
-- Verifica que los controladores devuelvan los códigos HTTP correctos en los tests.
-- Documenta los posibles códigos de respuesta en Swagger:
-
-```csharp
-[ProducesResponseType(StatusCodes.Status200OK)]
-[ProducesResponseType(StatusCodes.Status400BadRequest)]
-public ActionResult Post(...)
-```
-
----
-
-## Resumen de Beneficios
-| Solución                  | Beneficios                                   | Complejidad  |
-|---------------------------|----------------------------------------------|--------------|
-| Excepciones Personalizadas| Precisión en códigos HTTP, fácil extensión   | Media        |
-| Middleware Global         | Centralización, reduce código duplicado      | Alta         |
-| Validación Mejorada       | Previene errores comunes                     | Baja         |
-| Respuestas Estandarizadas | Consistencia en el formato de errores        | Baja         |
-| Refactorización de Métodos| Elimina respuestas ambiguas (-1)             | Baja         |
-
----
-
-> Estas opciones hacen que la API sea más robusta, predecible y fácil de mantener, facilitando la integración con clientes y la trazabilidad de errores.
+## Recommendation
+- Explicitly handle the `-1` return value from `PostCommand` to ensure correct flow for non-cancel commands.
+- Choose one error handling strategy for consistency:
+    - Use custom exceptions and middleware if you want centralized error handling and response formatting.
+    - Return HTTP status codes directly for simplicity in straightforward cases.

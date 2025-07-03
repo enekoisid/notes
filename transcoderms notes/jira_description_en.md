@@ -1,10 +1,11 @@
-# Investigation Summary: Error Handling in TaskController
+# Investigation Summary: Error Handling and Command Flow in TaskController
 
 ## Identified Problem
-The TaskController returns HTTP 200 even when errors occur (e.g., constraint violations in SQLite or file access errors with OpenCV).
+The `TaskController` does not explicitly handle the case when `PostCommand` returns `-1`, which indicates the command is not a cancel operation. Additionally, when a supra profile is not found, a generic exception is thrown. This leads to ambiguous responses and inconsistent error handling.
 
 ## Impact
-Client applications cannot reliably distinguish between successful and failed calls, as the HTTP status code does not reflect the actual outcome of the operation.
+- Clients may receive unclear or misleading HTTP responses.
+- Error handling is not consistent, making debugging and maintenance more difficult.
 
 ## Best Options Identified
 
@@ -25,8 +26,12 @@ Client applications cannot reliably distinguish between successful and failed ca
 - Makes it easier for clients to consume and interpret errors.
 
 ## Recommendation
-It is recommended to combine the above options to achieve robust, consistent, and maintainable error handling. Specifically:
+It is recommended to combine the above options for robust, consistent, and maintainable error handling. In particular:
 - Implement global middleware to capture and manage errors.
 - Use custom exceptions for relevant business cases.
 - Standardize error responses in JSON format.
 - Always return appropriate HTTP status codes based on the operation result.
+- Explicitly handle the `-1` return value from `PostCommand` to ensure correct flow for non-cancel commands.
+- Choose a consistent error handling strategy:
+    - Use custom exceptions and middleware for centralized error handling and standardized response formatting.
+    - Return HTTP status codes directly for simplicity in straightforward cases.
