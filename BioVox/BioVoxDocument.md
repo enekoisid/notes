@@ -1,8 +1,14 @@
 ### **Funcionalidades y Conceptos de BioVox.cloud 1.3**
 ---
 * **Creación de Huella de Voz:** Para crear una huella de voz (`voiceprint`), se necesita un audio de **voz natural** (`free speech`) con una duración mínima de **30 segundos**, siendo recomendable **1 minuto**.
+
+    > No se puede almacenar mas de una huella de voz por identificador, por lo que haria falta el uso de una base de datos externa que guarde la relación persona-identificadores.
+    > Tambien está la posibilidad de poner el mismo nombre al voiceprint dado que el nombre no es un identificador unico dentro de los datos de identificación del voiceprint.
 * **Detección Anti-Impostor:** El sistema cuenta con una medida de seguridad para detectar si se reproduce una grabación en lugar de una voz en vivo, lo que resultaría en un reconocimiento negativo.
+
+    > Esto puede acarrear problemas para la identificación de personas usando grabaciones de llamadas por la forma de codificación de las llamadas telefónicas.
 * **Independencia del Idioma:** La biometría de voz funciona con la misma persona hablando en **diferentes idiomas**, ya que se centra en las características únicas de la voz, no en el contenido.
+* **Operación en audios sin streaming**: BioVox no admite la identificación en tiempo real, para ello habria que ingtegrarlo en un sistema que recoja el video en streaming y se lo pase como audio independiente.
 * **Operaciones de Reconocimiento:**
     * **Identificación (1:N):** El servicio **siempre** devuelve un porcentaje de probabilidad para cada persona registrada en la base de datos que podría coincidir con el audio.
     * **Verificación (1:1):** Permite verificar si una persona específica ha hablado en una grabación.
