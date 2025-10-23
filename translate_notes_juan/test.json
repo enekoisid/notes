@@ -1364,3 +1364,1076 @@ causa 2: {
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Hello! 😊 How are you? 🎉 I hope you have a great day! 🌟"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Bonjour! 😊 Comment vas-tu? 🎉 J’espère que vous passez une excellente journée\xa0! 🌟"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Kaixo! 😊 Zer moduz zaude? 🎉 Egun bikaina izatea espero dut! 🌟"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summary with emojis 📝 and special ✨ symbols"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumé avec emojis 📝 et symboles spéciaux ✨"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Laburpena emoji 📝 eta sinbolo bereziekin ✨"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Emojis are great 🚀 and make communication more fun 🎭"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Les emojis sont géniaux 🚀 et rendent la communication plus amusante 🎭"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Emojiak bikainak 🚀 dira eta komunikazio dibertigarriagoa 🎭 egiten dute"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Emojis in summary 🎯"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Emojis en résumé 🎯"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Emojisa labur esanda 🎯"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "This is an extremely long text that contains many complex words and phrases to test how the translation system behaves when faced with long texts. The goal is to check if the service can properly handle long texts without generating errors or performance issues. This paragraph continues with more content to ensure that it really is a long text and representative of what could be found in a real scenario of use. The idea is to test the limits of the system and see how it responds to these types of technical challenges that could arise in production situations where users send complete documents or very long texts for machine translation."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Il s’agit d’un texte extrêmement long qui contient de nombreux mots et phrases complexes pour tester le comportement du système de traduction lorsqu’il est confronté à des textes longs. L’objectif est de vérifier si le service peut gérer correctement les textes longs sans générer d’erreurs ou de problèmes de performance. Ce paragraphe se poursuit avec plus de contenu pour s’assurer qu’il s’agit vraiment d’un texte long et représentatif de ce que l’on pourrait trouver dans un scénario réel d’utilisation. L’idée est de tester les limites du système et de voir comment il répond à ce type de défis techniques qui pourraient survenir dans des situations de production où les utilisateurs envoient des documents complets ou des textes très longs pour la traduction automatique."
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "This is also a very long summary that contains multiple sentences and complex concepts to test the behavior of the system in the face of long texts. The summary includes detailed information on various topics and aspects that require an accurate and consistent translation. Text length is intended to assess the service\'s ability to handle high-volume content without compromising translation quality or generating errors in processing."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Il s’agit également d’un très long résumé qui contient de multiples phrases et des concepts complexes pour tester le comportement du système face à de longs textes. Le résumé comprend des informations détaillées sur divers sujets et aspects qui nécessitent une traduction précise et cohérente. La longueur du texte est destinée à évaluer la capacité du service à gérer du contenu volumineux sans compromettre la qualité de la traduction ou générer des erreurs de traitement."
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Laburpena bileraren agendarako soilik"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the inexplicable and the decision to retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexplicable et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari buruzko hausnarketak eta erretiroa hartzeko erabakia"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Laburpena bileraren agendarako soilik"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Laburpena bileraren agendarako soilik"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 1000,
+                "out": 2000,
+                "markable_id": 1,
+                "markable_type": "note",
+                "annotable_id": 100,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 1: Reflections on the Inexplicable"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 1 : Réflexions sur l’inexplicable"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 2000,
+                "out": 3000,
+                "markable_id": 2,
+                "markable_type": "note",
+                "annotable_id": 200,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 2: Uncertainty as a driver"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 2 : L’incertitude comme facteur"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 3000,
+                "out": 4000,
+                "markable_id": 3,
+                "markable_type": "note",
+                "annotable_id": 300,
+                "annotable_type": "transcript",
+                "speaker": "S3"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 3: Innovation and technology"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 3 : Innovation et technologie"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 4000,
+                "out": 5000,
+                "markable_id": 4,
+                "markable_type": "note",
+                "annotable_id": 400,
+                "annotable_type": "transcript",
+                "speaker": "S4"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 4: Sustainable development"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 4 : Développement durable"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5000,
+                "out": 6000,
+                "markable_id": 5,
+                "markable_type": "note",
+                "annotable_id": 500,
+                "annotable_type": "transcript",
+                "speaker": "S5"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 5: Artificial Intelligence"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 5 : Intelligence artificielle"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 6000,
+                "out": 7000,
+                "markable_id": 6,
+                "markable_type": "note",
+                "annotable_id": 600,
+                "annotable_type": "transcript",
+                "speaker": "S6"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 6: Digital Transformation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 6 : Transformation numérique"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 7000,
+                "out": 8000,
+                "markable_id": 7,
+                "markable_type": "note",
+                "annotable_id": 700,
+                "annotable_type": "transcript",
+                "speaker": "S7"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 7: Circular economy"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 7 : Économie circulaire"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 8000,
+                "out": 9000,
+                "markable_id": 8,
+                "markable_type": "note",
+                "annotable_id": 800,
+                "annotable_type": "transcript",
+                "speaker": "S8"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 8: Environmental sustainability"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 8 : Durabilité environnementale"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 9000,
+                "out": 10000,
+                "markable_id": 9,
+                "markable_type": "note",
+                "annotable_id": 900,
+                "annotable_type": "transcript",
+                "speaker": "S9"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 9: Social Innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 9 : Innovation sociale"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 10000,
+                "out": 11000,
+                "markable_id": 10,
+                "markable_type": "note",
+                "annotable_id": 1000,
+                "annotable_type": "transcript",
+                "speaker": "S10"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 10: Future of work"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 10\xa0: L’avenir du travail"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 11000,
+                "out": 12000,
+                "markable_id": 11,
+                "markable_type": "note",
+                "annotable_id": 1100,
+                "annotable_type": "transcript",
+                "speaker": "S11"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 11: Blockchain and cryptocurrencies"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 11 : Blockchain et crypto-monnaies"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 12000,
+                "out": 13000,
+                "markable_id": 12,
+                "markable_type": "note",
+                "annotable_id": 1200,
+                "annotable_type": "transcript",
+                "speaker": "S12"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 12: Virtual and augmented reality"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 12 : Réalité virtuelle et augmentée"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 13000,
+                "out": 14000,
+                "markable_id": 13,
+                "markable_type": "note",
+                "annotable_id": 1300,
+                "annotable_type": "transcript",
+                "speaker": "S13"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 13: Internet of Things"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 13 : Internet des objets"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 14000,
+                "out": 15000,
+                "markable_id": 14,
+                "markable_type": "note",
+                "annotable_id": 1400,
+                "annotable_type": "transcript",
+                "speaker": "S14"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 14: Quantum computing"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 14 : L’informatique quantique"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 15000,
+                "out": 16000,
+                "markable_id": 15,
+                "markable_type": "note",
+                "annotable_id": 1500,
+                "annotable_type": "transcript",
+                "speaker": "S15"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 15: Advanced machine learning"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 15 : Apprentissage automatique avancé"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 16000,
+                "out": 17000,
+                "markable_id": 16,
+                "markable_type": "note",
+                "annotable_id": 1600,
+                "annotable_type": "transcript",
+                "speaker": "S16"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 16: Industrial Automation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 16 : Automatisation industrielle"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 17000,
+                "out": 18000,
+                "markable_id": 17,
+                "markable_type": "note",
+                "annotable_id": 1700,
+                "annotable_type": "transcript",
+                "speaker": "S17"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 17: Renewable energies"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 17\xa0: Énergies renouvelables"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 18000,
+                "out": 19000,
+                "markable_id": 18,
+                "markable_type": "note",
+                "annotable_id": 1800,
+                "annotable_type": "transcript",
+                "speaker": "S18"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 18: Personalized Medicine"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 18 : Médecine personnalisée"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 19000,
+                "out": 20000,
+                "markable_id": 19,
+                "markable_type": "note",
+                "annotable_id": 1900,
+                "annotable_type": "transcript",
+                "speaker": "S19"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 19: Smart Cities"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 19 : Villes intelligentes"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 20000,
+                "out": 21000,
+                "markable_id": 20,
+                "markable_type": "note",
+                "annotable_id": 2000,
+                "annotable_type": "transcript",
+                "speaker": "S20"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 20: Modern biotechnology"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 20\xa0: Biotechnologie moderne"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 21000,
+                "out": 22000,
+                "markable_id": 21,
+                "markable_type": "note",
+                "annotable_id": 2100,
+                "annotable_type": "transcript",
+                "speaker": "S21"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 21: Applied nanotechnology"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 21 : Nanotechnologies appliquées"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 22000,
+                "out": 23000,
+                "markable_id": 22,
+                "markable_type": "note",
+                "annotable_id": 2200,
+                "annotable_type": "transcript",
+                "speaker": "S22"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 22: Advanced Robotics"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 22 : Robotique avancée"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 23000,
+                "out": 24000,
+                "markable_id": 23,
+                "markable_type": "note",
+                "annotable_id": 2300,
+                "annotable_type": "transcript",
+                "speaker": "S23"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 23: Industrial 3D Printing"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 23 : Impression 3D industrielle"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 24000,
+                "out": 25000,
+                "markable_id": 24,
+                "markable_type": "note",
+                "annotable_id": 2400,
+                "annotable_type": "transcript",
+                "speaker": "S24"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 24: Advanced Cybersecurity"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 24 : Cybersécurité avancée"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 25000,
+                "out": 26000,
+                "markable_id": 25,
+                "markable_type": "note",
+                "annotable_id": 2500,
+                "annotable_type": "transcript",
+                "speaker": "S25"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 25: Big data and analytics"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 25 : Mégadonnées et analytique"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 26000,
+                "out": 27000,
+                "markable_id": 26,
+                "markable_type": "note",
+                "annotable_id": 2600,
+                "annotable_type": "transcript",
+                "speaker": "S26"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 26: Hybrid cloud computing"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 26 : Cloud computing hybride"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 27000,
+                "out": 28000,
+                "markable_id": 27,
+                "markable_type": "note",
+                "annotable_id": 2700,
+                "annotable_type": "transcript",
+                "speaker": "S27"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 27: Edge computing"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 27 : Informatique de périphérie"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 28000,
+                "out": 29000,
+                "markable_id": 28,
+                "markable_type": "note",
+                "annotable_id": 2800,
+                "annotable_type": "transcript",
+                "speaker": "S28"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 28: 5G and connectivity"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texto 28 : 5G et connectivité"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 29000,
+                "out": 30000,
+                "markable_id": 29,
+                "markable_type": "note",
+                "annotable_id": 2900,
+                "annotable_type": "transcript",
+                "speaker": "S29"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 29: Autonomous vehicles"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 29 : Véhicules autonomes"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 30000,
+                "out": 31000,
+                "markable_id": 30,
+                "markable_type": "note",
+                "annotable_id": 3000,
+                "annotable_type": "transcript",
+                "speaker": "S30"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Text 30: Drones and unmanned aircraft"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Texte 30 : Drones et aéronefs sans pilote"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                }
+            ],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "Do you think before you speak or do you speak after thinking?"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Pensez-vous avant de parler ou parlez-vous après avoir réfléchi ?"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Zuek hitz egin baino lehen pentsatzen duzue ala pentsatu ondoren hitz egiten duzue?"
+                }
+            ]
+        }
+    ]
+}
