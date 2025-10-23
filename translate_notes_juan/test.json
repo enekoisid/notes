@@ -1,0 +1,1366 @@
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                }
+            ],
+            "summarization": []
+        }
+    ]
+}
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Роздуми про незрозуміле та рішення піти на пенсію"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Підбиття підсумків лише для порядку денного засідання"
+                }
+            ],
+            "aaa": []
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Невизначеність як рушійна сила інновацій"
+                }
+            ],
+            "summarization": [],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "Hello, how are you? Let\'s do the heavy shopping"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Bonjour, comment vas-tu? Faisons les gros achats"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Привіт, як справи? Давайте займемося важкими покупками"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+ERROR: {'taskExecutionID': 3, 'state': 'erroneous', 'errorMessage': 'One or more errors occurred. (Cannot deserialize the current JSON object (e.g. {
+        "name": "value"
+    }) into type \'TranscriptionModule.Transcriptor.TranslationResult[]\' because the type requires a JSON array (e.g. [
+        1,
+        2,
+        3
+    ]) to deserialize correctly.To fix this error either change the JSON to a JSON array (e.g. [
+        1,
+        2,
+        3
+    ]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.Path \'error\', line 1, position 9.)', 'notifyUrl': 'http: //172.29.48.1:5007/notification', 'startDateTime': '2025-10-23T11:56:18.5196154+02:00', 'finishDateTime': '2025-10-23T11:56:19.1953022+02:00', 'progress': -1, 'taskID': 3, 'result': ''}
+}
+
+CAUSA: poner un codigo de idioma no valido en translationToLanguages en el JSON de entrada. (e.j: "patata-supersonica" o "eus")
+causa 2: {
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Роздуми про незрозуміле та рішення піти на пенсію"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Підбиття підсумків лише для порядку денного засідання"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Невизначеність як рушійна сила інновацій"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Ziurgabetasuna berrikuntzaren eragile gisa"
+                }
+            ],
+            "summarization": []
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Роздуми про незрозуміле та рішення піти на пенсію"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Підбиття підсумків лише для порядку денного засідання"
+                }
+            ],
+            "aaa": [],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "Do you think before you speak or do you speak after thinking?"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Pensez-vous avant de parler ou parlez-vous après avoir réfléchi ?"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Ви думаєте, перш ніж говорити, чи ви говорите, подумавши?"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Невизначеність як рушійна сила інновацій"
+                }
+            ],
+            "summarization": [],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "Hello, how are you? Let\'s do the heavy shopping"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Bonjour, comment vas-tu? Faisons les gros achats"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Привіт, як справи? Давайте займемося важкими покупками"
+                }
+            ],
+            "algo": []
+        }
+    ]
+}'
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Роздуми про незрозуміле та рішення піти на пенсію"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Riflessioni sull\'inspiegabile e sulla decisione di andare in pensione"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Підбиття підсумків лише для порядку денного засідання"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Riepiloga solo per l\'ordine del giorno della riunione"
+                }
+            ],
+            "aaa": [],
+            "algo": []
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Невизначеність як рушійна сила інновацій"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Ziurgabetasuna berrikuntzaren eragile gisa"
+                },
+                {
+                    "Language": "it",
+                    "Text": "L\'incertezza come motore dell\'innovazione"
+                }
+            ],
+            "summarization": [],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "Hello, how are you? Let\'s do the heavy shopping"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Bonjour, comment vas-tu? Faisons les gros achats"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Привіт, як справи? Давайте займемося важкими покупками"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Kaixo, zer moduz? Erosketa astuna egingo dugu"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Ciao come stai? Facciamo lo shopping pesante"
+                }
+            ],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "It\'s very difficult all this"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "C’est très difficile tout cela"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Все це дуже складно"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "It ́s very difficult todo esto"
+                },
+                {
+                    "Language": "it",
+                    "Text": "È molto difficile tutto questo"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    'taskExecutionID': 16, 
+'state': 'erroneous', 'errorMessage': 'One or more errors occurred. (Cannot deserialize the current JSON object (e.g. {
+        "name": "value"
+    }) into type \'TranscriptionModule.Transcriptor.TranslationResult[]\' because the type requires a JSON array (e.g. [
+        1,
+        2,
+        3
+    ]) to deserialize correctly.To fix this error either change the JSON to a JSON array (e.g. [
+        1,
+        2,
+        3
+    ]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.Path \'error\', line 1, position 9.)', 'notifyUrl': 'http: //172.29.48.1:5007/notification', 'startDateTime': '2025-10-23T12:13:11.0283342+02:00', 'finishDateTime': '2025-10-23T12:13:11.3206734+02:00', 'progress': -1, 'taskID': 16, 'result': ''}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {},
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Роздуми про незрозуміле та рішення піти на пенсію"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Riflessioni sull\'inspiegabile e sulla decisione di andare in pensione"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Підбиття підсумків лише для порядку денного засідання"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Riepiloga solo per l\'ordine del giorno della riunione"
+                }
+            ],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "when Zoiberg comes out screaming gluglugu out the door it\'s funny"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "quand Zoiberg sort en criant gluglugu à la porte, c’est drôle"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "коли Зойберг виходить з криком «Глуглугу за двері», це смішно"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Zoibergek atetik gluglugu oihuka ateratzen denean, barregarria da"
+                },
+                {
+                    "Language": "it",
+                    "Text": "quando Zoiberg esce urlando gluglugu fuori dalla porta è divertente"
+                }
+            ],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "Do you think before you speak or do you speak after thinking?"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Pensez-vous avant de parler ou parlez-vous après avoir réfléchi ?"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Ви думаєте, перш ніж говорити, чи ви говорите, подумавши?"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Zuek hitz egin baino lehen pentsatzen duzue ala pentsatu ondoren hitz egiten duzue?"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Pensi prima di parlare o parli dopo aver pensato?"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Невизначеність як рушійна сила інновацій"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Ziurgabetasuna berrikuntzaren eragile gisa"
+                },
+                {
+                    "Language": "it",
+                    "Text": "L\'incertezza come motore dell\'innovazione"
+                }
+            ],
+            "summarization": [],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "Hello, how are you? Let\'s do the heavy shopping"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Bonjour, comment vas-tu? Faisons les gros achats"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Привіт, як справи? Давайте займемося важкими покупками"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Kaixo, zer moduz? Erosketa astuna egingo dugu"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Ciao come stai? Facciamo lo shopping pesante"
+                }
+            ],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "It\'s very difficult all this"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "C’est très difficile tout cela"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Все це дуже складно"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "It ́s very difficult todo esto"
+                },
+                {
+                    "Language": "it",
+                    "Text": "È molto difficile tutto questo"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {},
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Роздуми про незрозуміле та рішення піти на пенсію"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Riflessioni sull\'inspiegabile e sulla decisione di andare in pensione"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Résumer pour l’ordre du jour de la réunion uniquement"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Підбиття підсумків лише для порядку денного засідання"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Riepiloga solo per l\'ordine del giorno della riunione"
+                }
+            ],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "when Zoiberg comes out screaming gluglugu out the door it\'s funny"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "quand Zoiberg sort en criant gluglugu à la porte, c’est drôle"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "коли Зойберг виходить з криком «Глуглугу за двері», це смішно"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Zoibergek atetik gluglugu oihuka ateratzen denean, barregarria da"
+                },
+                {
+                    "Language": "it",
+                    "Text": "quando Zoiberg esce urlando gluglugu fuori dalla porta è divertente"
+                }
+            ],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "Do you think before you speak or do you speak after thinking?"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Pensez-vous avant de parler ou parlez-vous après avoir réfléchi ?"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Ви думаєте, перш ніж говорити, чи ви говорите, подумавши?"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Zuek hitz egin baino lehen pentsatzen duzue ala pentsatu ondoren hitz egiten duzue?"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Pensi prima di parlare o parli dopo aver pensato?"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "L’incertitude comme moteur de l’innovation"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Невизначеність як рушійна сила інновацій"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Ziurgabetasuna berrikuntzaren eragile gisa"
+                },
+                {
+                    "Language": "it",
+                    "Text": "L\'incertezza come motore dell\'innovazione"
+                }
+            ],
+            "summarization": [],
+            "aaa": [
+                {
+                    "Language": "en",
+                    "Text": "Hello, how are you? Let\'s do the heavy shopping"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Bonjour, comment vas-tu? Faisons les gros achats"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Привіт, як справи? Давайте займемося важкими покупками"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Kaixo, zer moduz? Erosketa astuna egingo dugu"
+                },
+                {
+                    "Language": "it",
+                    "Text": "Ciao come stai? Facciamo lo shopping pesante"
+                }
+            ],
+            "algo": [
+                {
+                    "Language": "en",
+                    "Text": "It\'s very difficult all this"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "C’est très difficile tout cela"
+                },
+                {
+                    "Language": "uk",
+                    "Text": "Все це дуже складно"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "It ́s very difficult todo esto"
+                },
+                {
+                    "Language": "it",
+                    "Text": "È molto difficile tutto questo"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {}
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            }
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {},
+            "eu": []
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2",
+                "gluglu": 32
+            },
+            "eu": []
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "gluglu": 32,
+                "aaaaaaaaaa": "test"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Summarize for meeting agenda only"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Summarize for meeting agenda only"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Uncertainty as a driver of innovation"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Ziurgabetasuna berrikuntzaren eragile gisa"
+                }
+            ],
+            "summarization": []
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "The sweets, they even raise the VAT on the sweets"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Txutxeak, txutxeen BEZera igotzen gaituzte"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Everything that refers to me and that appears there and to the party colleagues who appear there, is not true, except for something that has been published in the media"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Niri dagokidan eta han agertzen den guztia eta bertan agertzen diren alderdikideei dagokienez, ez da egia, hedabideek argitaratu duten zerbait izan ezik."
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "A glass is a glass and a plate is a plate"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Edalontzi bat edalontzi bat da eta plater bat plater bat da"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "The sweets, they even raise the VAT on the sweets"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Txutxeak, txutxeen BEZera igotzen gaituzte"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Les bonbons, ils augmentent même la TVA sur les bonbons"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Everything that refers to me and that appears there and to the party colleagues who appear there, is not true, except for something that has been published in the media"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Niri dagokidan eta han agertzen den guztia eta bertan agertzen diren alderdikideei dagokienez, ez da egia, hedabideek argitaratu duten zerbait izan ezik."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Tout ce qui se réfère à moi et qui apparaît là-bas et aux collègues du parti qui y figurent, n’est pas vrai, sauf quelque chose qui a été publié dans les médias"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Everything that refers to me and that appears there and to the party colleagues who appear there, is not true, except for something that has been published in the media"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Niri dagokidan eta han agertzen den guztia eta bertan agertzen diren alderdikideei dagokienez, ez da egia, hedabideek argitaratu duten zerbait izan ezik."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Tout ce qui se réfère à moi et qui apparaît là-bas et aux collègues du parti qui y figurent, n’est pas vrai, sauf quelque chose qui a été publié dans les médias"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Les Espagnols sont très espagnols et très espagnols."
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "The sweets, they even raise the VAT on the sweets"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Txutxeak, txutxeen BEZera igotzen gaituzte"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Les bonbons, ils augmentent même la TVA sur les bonbons"
+                }
+            ]
+        },
+        {
+            "meta": {
+                "in": 5555,
+                "out": 7777,
+                "markable_id": 22334,
+                "markable_type": "note",
+                "annotable_id": 98765,
+                "annotable_type": "transcript",
+                "speaker": "S2"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Everything that refers to me and that appears there and to the party colleagues who appear there, is not true, except for something that has been published in the media"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Niri dagokidan eta han agertzen den guztia eta bertan agertzen diren alderdikideei dagokienez, ez da egia, hedabideek argitaratu duten zerbait izan ezik."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Tout ce qui se réfère à moi et qui apparaît là-bas et aux collègues du parti qui y figurent, n’est pas vrai, sauf quelque chose qui a été publié dans les médias"
+                }
+            ],
+            "summarization": [
+                {
+                    "Language": "en",
+                    "Text": "Everything that refers to me and that appears there and to the party colleagues who appear there, is not true, except for something that has been published in the media"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Niri dagokidan eta han agertzen den guztia eta bertan agertzen diren alderdikideei dagokienez, ez da egia, hedabideek argitaratu duten zerbait izan ezik."
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Tout ce qui se réfère à moi et qui apparaît là-bas et aux collègues du parti qui y figurent, n’est pas vrai, sauf quelque chose qui a été publié dans les médias"
+                }
+            ]
+        }
+    ]
+}
