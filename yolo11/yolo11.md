@@ -1,0 +1,14 @@
+- cambia los archivos onnx por lo de yolo11 y yolo11 para yolo365
+- Score->Predict recibe el stream de la imagen (frame) a procesar
+    - para ello, en videoanalytics crea un stream del Mat en lugar de Bitmap del objeto `image`
+- para sacar el framesize ya no usa el mat porque no es compatible con yolo11, usa metodos propios de VideoCapture para el tamaño del frame
+- borra los scorers no usados Yolov5mDrones y yolov5mObjects365
+- cambio de yolov5 a yolosharp (cambio mas tocho)
+    - Se pasa de crear yoloscorers con los scorers especifricos a crear un yolopredictor
+    - Si el modelo es uno de los eliminados, mete en el predictor el weightsFile del modelo
+    - Se modifica el metodo Predict de Score.cs para que haga la predicción con ImageSharp (del nuevo YoloSharp) usando el stream de la clase Image del frame al que se le ha llamado el Predict, devolviendo la detección del predictor
+    - Esas predicciones (en VideoAnalyticsModule.cs) se usa para recorrer las predicciones en lugar del YoloPrediction de antes, poniendo el confidence en en el confidence del result en lugar de poner el score de la predicción de antes
+    - Para detectar los limites se usa Bounds en lugar de Rectangle, usando `Top` en lugar de `Y`
+    - Para añadirlo al diccionario de prediuccio0nes, se usa `detection.Name` en lugar de `prediction.Label`
+- Se meten las dependencias necesarias de OpenCVSharp, ONNXRuntime y YoloSharp con todas sus dependencias
+- Se actualiza a .net8

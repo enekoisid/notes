@@ -2437,3 +2437,41 @@ causa 2: {
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+{
+    "translations": [
+        {
+            "meta": {
+                "in": 2222,
+                "out": 4444,
+                "markable_id": 12345,
+                "markable_type": "note",
+                "annotable_id": 67890,
+                "annotable_type": "transcript",
+                "speaker": "S1"
+            },
+            "text": [
+                {
+                    "Language": "en",
+                    "Text": "Reflections on the Unexplained and the Decision to Retire"
+                },
+                {
+                    "Language": "fr",
+                    "Text": "Réflexions sur l’inexpliqué et la décision de prendre sa retraite"
+                },
+                {
+                    "Language": "eu",
+                    "Text": "Azalezinari eta erretiratzeko erabakiari buruzko gogoetak"
+                }
+            ]
+        }
+    ]
+}
