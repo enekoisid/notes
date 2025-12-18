@@ -1,0 +1,94 @@
+## NVIDIA Riva
+- https://huggingface.co/nvidia/Riva-Translate-4B-Instruct-v1.1
+- languages:
+    - English (en)
+    - German (de)
+    - European Spanish (es-ES)
+    - Latin American Spanish (es-US)
+    - French (fr)
+    - Brazilian Portuguese (pt-BR)
+    - Russian (ru)
+    - Simplified Chinese (zh-CN)
+    - Traditional Chinese (zh-TW)
+    - Japanese (ja)
+    - Korean (ko)
+    - and Arabic (ar)
+- Apache 2.0
+
+## NLLB-200
+- Diferentes versiones
+    - [consume menos -> menos exacta](https://huggingface.co/facebook/nllb-200-distilled-600M)
+    - [consume mas -> mas exacta](https://huggingface.co/facebook/nllb-200-3.3B)
+    - ...
+- Al rededor de 200 idiomas
+    - se ha usado el dataset [flores-200](https://huggingface.co/datasets/Muennighoff/flores200)
+    - soporta Español, ingles y arabe entre [otros](https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/README.md#:~:text=language%3A%0A%20%20%2D,zsm%0A%20%20%2D%20zu)
+- Licencia CC-BY-NC 4.0 (no comercial, solo investigación)
+
+## mBART-50
+- https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt
+- languages:
+    - Arabic (ar_AR)
+    - Czech (cs_CZ)
+    - German (de_DE)
+    - English (en_XX)
+    - Spanish (es_XX)
+    - Estonian (et_EE)
+    - Finnish (fi_FI)
+    - French (fr_XX)
+    - Gujarati (gu_IN)
+    - Hindi (hi_IN)
+    - Italian (it_IT)
+    - Japanese (ja_XX)
+    - Kazakh (kk_KZ)
+    - Korean (ko_KR)
+    - Lithuanian (lt_LT)
+    - Latvian (lv_LV)
+    - Burmese (my_MM)
+    - Nepali (ne_NP)
+    - Dutch (nl_XX)
+    - Romanian (ro_RO)
+    - Russian (ru_RU)
+    - Sinhala (si_LK)
+    - Turkish (tr_TR)
+    - Vietnamese (vi_VN)
+    - Chinese (zh_CN)
+    - Afrikaans (af_ZA)
+    - Azerbaijani (az_AZ)
+    - Bengali (bn_IN)
+    - Persian (fa_IR)
+    - Hebrew (he_IL)
+    - Croatian (hr_HR)
+    - Indonesian (id_ID)
+    - Georgian (ka_GE)
+    - Khmer (km_KH)
+    - Macedonian (mk_MK)
+    - Malayalam (ml_IN)
+    - Mongolian (mn_MN)
+    - Marathi (mr_IN)
+    - Polish (pl_PL)
+    - Pashto (ps_AF)
+    - Portuguese (pt_XX)
+    - Swedish (sv_SE)
+    - Swahili (sw_KE)
+    - Tamil (ta_IN)
+    - Telugu (te_IN)
+    - Thai (th_TH)
+    - Tagalog (tl_XX)
+    - Ukrainian (uk_UA)
+    - Urdu (ur_PK)
+    - Xhosa (xh_ZA)
+    - Galician (gl_ES)
+    - Slovene (sl_SI)
+- Licencias MIT o Apache 2.0
+
+## mT5
+- idiomas entrenados por mC4, entre ellos están bien soportados el inglés, español y Árabe
+- Diferentes modelos disponibles
+    - [mT5-Small](https://huggingface.co/google/mt5-small): (~300M parámetros) Rápido y ligero.
+    - [mT5-Base](https://huggingface.co/google/mt5-base): (~580M parámetros) Buen equilibrio entre rendimiento y recursos.
+    - [mT5-Large](https://huggingface.co/google/mt5-large): (~1.2B parámetros) Mayor precisión.
+    - [mT5-XL](https://huggingface.co/google/mt5-xl): (~3.7B parámetros) Muy potente, para tareas complejas.
+    - [mT5-XXL](https://huggingface.co/google/mt5-xxl): (~13B parámetros) Más precisa.
+- Idiomas disponibles [aquí](https://huggingface.co/google/mt5-small/blob/main/README.md#:~:text=metadata-,language,-%3A%0A%20%20%2D%20multilingual)
+- Licencia Apache 2.0
