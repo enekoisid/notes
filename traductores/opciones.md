@@ -1,29 +1,50 @@
+# Idiomas que tiene que traducir
+- English
+- Chinese
+- French
+- Russian
+- Dutch
+- Portuguese
+- Spanish
+- Italian
+- Farsi
+- Hebrew
+- Japanese
+- Korean
+- Turkish
+- Thai
+- Hindi
+- Urdu
+- Nepali
+- Arabic
+
+# Sugerencias de modelos 
+
+## Cobertura vs los idiomas requeridos (verificado)
+- **NVIDIA Riva (`nvidia/Riva-Translate-4B-Instruct-v1.1`)**: **NO** (cubre 9/18 si contamos “Chinese/Spanish/Portuguese” como cubiertos, pero le faltan Dutch/Italian/Farsi/Hebrew/Turkish/Thai/Hindi/Urdu/Nepali).
+  - **Fuente**: model card de Hugging Face (README): `https://huggingface.co/nvidia/Riva-Translate-4B-Instruct-v1.1`
+- **mBART-50 (`facebook/mbart-large-50-many-to-many-mmt`)**: **SÍ** (cubre los 18 idiomas requeridos).
+  - **Fuente**: model card de Hugging Face (README): `https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt`
+- **mT5 (`google/mt5-*`)**: **SÍ en “idioma presente en entrenamiento”** (incluye los 18), pero **no es un modelo “de traducción” listo** como mBART/Riva: normalmente necesitas prompting cuidadoso y/o fine-tuning para buena calidad.
+  - **Fuente**: model card de Hugging Face (README): `https://huggingface.co/google/mt5-small`
+
 ## NVIDIA Riva
 - https://huggingface.co/nvidia/Riva-Translate-4B-Instruct-v1.1
-- languages:
-    - English (en)
-    - German (de)
-    - European Spanish (es-ES)
-    - Latin American Spanish (es-US)
-    - French (fr)
-    - Brazilian Portuguese (pt-BR)
-    - Russian (ru)
-    - Simplified Chinese (zh-CN)
-    - Traditional Chinese (zh-TW)
-    - Japanese (ja)
-    - Korean (ko)
-    - and Arabic (ar)
-- Apache 2.0
-
-## NLLB-200
-- Diferentes versiones
-    - [consume menos -> menos exacta](https://huggingface.co/facebook/nllb-200-distilled-600M)
-    - [consume mas -> mas exacta](https://huggingface.co/facebook/nllb-200-3.3B)
-    - ...
-- Al rededor de 200 idiomas
-    - se ha usado el dataset [flores-200](https://huggingface.co/datasets/Muennighoff/flores200)
-    - soporta Español, ingles y arabe entre [otros](https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/README.md#:~:text=language%3A%0A%20%20%2D,zsm%0A%20%20%2D%20zu)
-- Licencia CC-BY-NC 4.0 (no comercial, solo investigación)
+- **Idiomas soportados (según el model card)**: el propio README indica que soporta traducción en **12 idiomas y dialectos**:
+  - English (`en`)
+  - German (`de`)
+  - European Spanish (`es-ES`)
+  - Latin American Spanish (`es-US`)
+  - French (`fr`)
+  - Brazilian Portuguese (`pt-BR`)
+  - Russian (`ru`)
+  - Simplified Chinese (`zh-CN`)
+  - Traditional Chinese (`zh-TW`)
+  - Japanese (`ja`)
+  - Korean (`ko`)
+  - Arabic (`ar`)
+- **Nota**: esto **no** cubre Dutch/Italian/Farsi/Hebrew/Turkish/Thai/Hindi/Urdu/Nepali.
+- **Licencia**: `nvidia-community-model-license` (según el front-matter del model card).
 
 ## mBART-50
 - https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt
@@ -91,4 +112,8 @@
     - [mT5-XL](https://huggingface.co/google/mt5-xl): (~3.7B parámetros) Muy potente, para tareas complejas.
     - [mT5-XXL](https://huggingface.co/google/mt5-xxl): (~13B parámetros) Más precisa.
 - Idiomas disponibles [aquí](https://huggingface.co/google/mt5-small/blob/main/README.md#:~:text=metadata-,language,-%3A%0A%20%20%2D%20multilingual)
+- **Verificación rápida (model card)**: `google/mt5-small` lista ~101 idiomas. Para tus requisitos, aparecen explícitamente (códigos):
+  - English (`en`), Chinese (`zh`), French (`fr`), Russian (`ru`), Dutch (`nl`), Portuguese (`pt`), Spanish (`es`), Italian (`it`),
+  - Farsi/Persian (`fa`), Hebrew (aparece como `iw`), Japanese (`ja`), Korean (`ko`), Turkish (`tr`), Thai (`th`),
+  - Hindi (`hi`), Urdu (`ur`), Nepali (`ne`), Arabic (`ar`).
 - Licencia Apache 2.0

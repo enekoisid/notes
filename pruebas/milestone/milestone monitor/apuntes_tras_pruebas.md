@@ -1,0 +1,10 @@
+- cuando se le da a restart service hay que darle a refresh status para que salga en azul el circulito.
+- cuando el servicio se para desde el iconito, se queda en naranja (no se si eso significa que está parado o en proceso de, si es parado esto no importa).
+- Cuando se inicia desde el panel de servicios, tarda bastante en pasar de azul a verde (no es un problema en verdad, pero yo lo apunto)
+- cuando se reinicia la maquina, el icono aparece solo pero sale con el circulito rojo, diciendo que está unhealthy, siendo que el servicio está en ejecución (visto desde los servicios). El icono rojo y el unhealthy desaparecen al darle a refresh status
+- al cerrar sesión si se pone directamente en verde
+- cuando se desinstala no desaparece ni el servicio ni el icono, pero el icono no deja hacer nada con el servicio
+- después del inicio tras un cierre de sesión y dejarlo un rato trabajando, al darle a stop me da el error que daba la otra vez
+- al instalar sin internet, aun estando el servicio iniciado, en el icono sale el unhealthy, y no se quita ni dándole a refresh
+- sin internet no hace caso a ningún comando (parar, reiniciar o actualizar estado) desde el icono
+- en relación a los dos anteriores, con el tiempo se recompone
