@@ -1,5 +1,11 @@
 # Resultados de comparaciones (YOLO)
 
+# hacer
+- ver los fps de deteccion
+- medir uso de gpu/cpu/memoria
+- ver para el entrenamiento si se habriua que usar la red neuronal vacia
+- ver para entrenamiento doble
+
 ## Global settings (inferencia)
 - `conf_score`: 0.5
 - `imgsz`: 640
@@ -79,12 +85,12 @@ Para escenas de tráfico desde altura, `yolo11n-visdrone` ofrece mejores detecci
 
 ---
 
-## Comparación 4: `yolo11(visdrone)` vs `yolov5m(visdrone)` (5 vídeos)
+## Comparación 4: `yolo11s(visdrone)` vs `yolov5m(visdrone)` (5 vídeos)
 ### Objetivo
 Comparar resultados en varios vídeos entre un modelo YOLOv11 y un modelo YOLOv5 entrenados con VisDrone.
 
 ### Setup
-- **Modelos**: `yolo11(visdrone)` vs `yolov5m(visdrone)`
+- **Modelos**: `yolo11s(visdrone)` vs `yolov5m(visdrone)`
 - **Entrada**: 5 vídeos en total:
   - Parkour
   - Pegasus
@@ -94,13 +100,13 @@ Comparar resultados en varios vídeos entre un modelo YOLOv11 y un modelo YOLOv5
 - **Parámetros**: ver “Global settings”
 
 ### Resultados (cualitativos)
-- **Vídeo de parkour**: `yolo11(visdrone)` captó más información que `yolov5m(visdrone)`.
+- **Vídeo de parkour**: `yolo11s(visdrone)` captó más información que `yolov5m(visdrone)`.
 - **Planos tipo dron**: ambos detectaron muy rara vez a las personas.
-- **Detección aérea de vehículos y peatones**: el ganador general fue `yolo11(visdrone)`.
-- **Vídeo de la rotonda**: `yolo11(visdrone)` detectó más coches.
-- **Vídeo del coche solitario**: `yolo11(visdrone)` captó mas tiempo el coche (durante todo el vídeo).
+- **Detección aérea de vehículos y peatones**: el ganador general fue `yolo11s(visdrone)`.
+- **Vídeo de la rotonda**: `yolo11s(visdrone)` detectó más coches.
+- **Vídeo del coche solitario**: `yolo11s(visdrone)` captó mas tiempo el coche (durante todo el vídeo).
 - **Vídeo de montaña (alpinistas)**: resultados parecidos, pero `yolov5m(visdrone)` fue más estable al detectar personas.
-- **Vídeo de Pegasus**: `yolo11(visdrone)` tuvo más falsos positivos con las letras alrededor del vídeo, pero detectó mejor los coches en general.
+- **Vídeo de Pegasus**: `yolo11s(visdrone)` tuvo más falsos positivos con las letras alrededor del vídeo, pero detectó mejor los coches en general.
 
 ### Conclusión
-En el conjunto de vídeos, `yolo11(visdrone)` rindió mejor para detección aérea de vehículos (y en general), aunque `yolov5m(visdrone)` mostró más estabilidad en un caso concreto (montaña).
+En el conjunto de vídeos, `yolo11s(visdrone)` rindió mejor para detección aérea de vehículos (y en general), aunque `yolov5m(visdrone)` mostró más estabilidad en un caso concreto (montaña).
